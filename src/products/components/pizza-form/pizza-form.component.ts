@@ -113,6 +113,7 @@ export class PizzaFormComponent implements OnChanges {
   }
 
   ngOnChanges(changes: SimpleChanges) {
+    console.log("onChanges:::");
     if (this.pizza && this.pizza.id) {
       this.exists = true;
       this.form.patchValue(this.pizza);
